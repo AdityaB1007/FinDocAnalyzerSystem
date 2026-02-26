@@ -172,6 +172,8 @@ Running agents on 8B parameter models requires specific configuration to prevent
 2. Inference Speed: Performance is highly dependent on GPU/CPU speed.
 3. Formatting: If the model returns a "Failed to Parse" error, adjusting the backstory to be more concise often resolves the issue.
 
+---
+
 # API Documentation
 ```
 Endpoint        Method        Description

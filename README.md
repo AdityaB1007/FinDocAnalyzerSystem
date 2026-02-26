@@ -109,6 +109,7 @@ Risk Assessor	    None	            It has no tools assigned to actually perform 
 ### 1. Prerequisites
 * **Python 3.10+**
 * **Ollama** (Download at [ollama.com](https://ollama.com))
+* Make a separate **data** folder in your cloned repository and upload your financial document in it
 
 ### 2. Local Model Preparation
 You must pull the required models to your local machine:

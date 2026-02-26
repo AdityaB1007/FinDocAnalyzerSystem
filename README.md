@@ -3,7 +3,6 @@ Wingify GenAI Eng Intern Task
 
 A high-performance, privacy-focused financial analysis pipeline that uses **Multi-Agent Orchestration** to extract insights from PDF documents. This system runs entirely on local hardware using **Ollama**, ensuring sensitive financial data is never transmitted to third-party APIs.
 
----
 
 ## Architecture
 
@@ -13,10 +12,6 @@ The system is built on a **FastAPI** backend and orchestrated by **CrewAI**. It 
 * **Senior Financial Analyst:** Extracts key metrics (Revenue, Net Income, Cash Flow) using semantic search.
 * **Risk Assessment Specialist:** Evaluates potential red flags and liabilities.
 * **Investment Advisor:** Synthesizes all findings with real-time market context (via Serper) to provide a final recommendation.
-
-
-
----
 
 ## Setup & Installation
 

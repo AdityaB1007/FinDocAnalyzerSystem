@@ -144,14 +144,6 @@ The analysis runs in the background. Poll the status endpoint using the job_id r
 GET http://localhost:8000/status/{job_id}
 ```
 
-## API Documentation
-```
-Endpoint        Method        Description
-/               GET           Health check for the API.
-/analyze        POST          Accepts a PDF and a query. Starts the multi-agent pipeline.
-/status/{id}    GET           Returns the current status (processing, completed, or failed).
-```
-
 ## Local LLM Optimization (Technical Notes)
 Running agents on 8B parameter models requires specific configuration to prevent parsing errors:
 
@@ -179,4 +171,12 @@ Running agents on 8B parameter models requires specific configuration to prevent
 1. Context Window: Local 8B models can become "distracted" by very large chunks of text. Future versions will implement more aggressive text cleaning.
 2. Inference Speed: Performance is highly dependent on GPU/CPU speed.
 3. Formatting: If the model returns a "Failed to Parse" error, adjusting the backstory to be more concise often resolves the issue.
+
+# API Documentation
+```
+Endpoint        Method        Description
+/               GET           Health check for the API.
+/analyze        POST          Accepts a PDF and a query. Starts the multi-agent pipeline.
+/status/{id}    GET           Returns the current status (processing, completed, or failed).
+```
 
